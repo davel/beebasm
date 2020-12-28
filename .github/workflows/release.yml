@@ -10,7 +10,6 @@ jobs:
   build:
     name: Upload Release Asset
     runs-on: ubuntu-latest
-    needs: Compile
     steps:
       - uses: actions/checkout@v2
       - name: make
