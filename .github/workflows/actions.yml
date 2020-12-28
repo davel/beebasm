@@ -10,7 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: make
-      run: make -C src
+      run: make -C src all
     - uses: actions/upload-artifact@v2
       with:
         path: beebasm
