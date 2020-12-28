@@ -12,10 +12,9 @@ jobs:
     runs-on: ubuntu-latest
     needs: Compile
     steps:
-      - name: Grab binary
-        uses: actions/download-artifact@v1
-        with:
-          name: beebasm
+      - uses: actions/checkout@v2
+      - name: make
+        run: make -C src all
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
