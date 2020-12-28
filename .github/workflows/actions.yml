@@ -12,6 +12,6 @@ jobs:
     - name: make
       run: make -C src
     - uses: actions/upload-artifact@v2
-        with:
-          path: beebasm
-          name: beebasm
+      with:
+        path: beebasm
+        name: beebasm
